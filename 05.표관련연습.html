@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h3>
+    이력서 만들기(dlut)  (4x4)
+</h3>
+<body>
+    <table border="1">
+        <caption>이력서 </caption>
+        <tr>
+            <td colspan="2" rowspan="2" width="130" height="150">사진</td>
+            <td width="50">이름</td>
+            <td width="200"></td>
+            <!--하나 지워도 된다. --> 4개짜리 만드는 것이니까 
+        </tr>
+
+        <tr>
+            <td>연락처</td>
+            <td></td>
+            <!--위에서 행이 합쳐졌으므로 2개 지워도 된다-->
+            <!--스타일 시트로 해주는 것이 좋다 -->
+        </tr>
+
+        <tr>
+            <td height="100" width="60">주소</td>
+            <td colspan="3"></td>
+            
+        </tr>
+
+        <tr>
+            <td height="100" width="">자기소개</td>
+            <td colspan="3"></td>
+            
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h1>테이블 내의 구조 나누기 </h1>
+    <!--테이블 나누어서 정보 표시 하는 용도로 활용한다. -->
+    <table border="1">
+        <thread>
+            <tr>
+                <th width="100">이름</th>
+                <th width="100">전화</th>
+                <th width="150">주소</th>
+            </tr>
+
+<!--th가  td보다 굵은 글씨다 -->
+        </thread>
+<!-- 검색해서 갖고 왔는데 테이블 형식의로 갖고 오는 
+    티 바디 안에서 for문 돌려서 넣으시오-->
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>010-1234-5678</td>
+                <td>서울특별시 금천구</td>
+            </tr>
+
+            <tr>
+                <td>이말똥</td>
+                <td>010-8790-9837</td>
+                <td>경기도 수원시</td>
+            </tr>
+
+            <tr>
+                <td>김개똥</td>
+                <td>010-2389-5983</td>
+                <td>인천광역시 연수구</td>
+            </tr>
+        
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">총인원</td>
+                <td> 3 </td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+
+</body>
+</html>
