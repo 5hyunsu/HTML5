@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 하이퍼링크 태그 </title>
+</head>
+<body>
+    <!--
+        하이퍼링크 기능은 웹문서의 가장 핵심적인 기능 
+        클릭읠 통해 연결된 곳으로 이동하며 사용이 편리한 기능
+        텍스트를 클릭하여 링크로 이동하는 방법, 
+        이미지를 클릭하여 링크로 이동하는 방법, 
+        현재 페이지 내에서 링크로 이동할 수 있음 
+        
+    -->
+    <h1>  하이퍼링크 관련 태그   </h1>
+    <!-- a태그의 href 속성으로 링크를 만들 수 있음 -->
+    <ul>
+        <li><a href="02.글씨관련태그.html">글자관련태그</a></li>
+        <li><a href="03.목록태그.html">목록관련태그</a></li>
+        <li><a href="05.표관련연습.html">멀티미디어관련태그</a></li>
+        <li><a href="http://www.naver.com">네이버</a></li>
+    </ul>
+
+    <h3> * target 속성 : 연결된 페이지를 어느탭에서 열 것인지 지정 </h3>
+    <p> _self : 기본값 : 현재 열려있는 창에 열림.  /p>
+        _blank : 새 탭에 열림 
+    </p>
+    <a href="https://www.google.com"> 구글 사이트(현재 페이지) </a><br>
+    <a href="https://www.daum.net" target="_blank"> 다음 사이트(새탭에서) </a>
+    <a href="https://www.google.com"> 구글 사이트 </a>
+
+    <h3> *이미지에 링크 만들기 </h3>
+    <a href="07.영역관련태그.html" target="_blank">
+        <img src="resources/img/video1_sumnail.jpg" width="300", height="180">
+    </a>
+    <!--문서 안에서 링크 거는 방법-->
+    <h3> * 한페이지 내에서  링크 만들기 </h3>
+    <!--#을 넣으면 id .을 넣으면 클래스 -->
+
+    <h4 id="메인"> 바로가기 </h4>
+    
+    <ul>
+        <li><a href="#cont1">본문1</a></li>
+        <li><a href="#cont2">본문2</a></li>
+        <li><a href="#cont3">본문3</a></li>
+        <li><a href="#cont4">본문4</a></li>
+    </ul>
+<!-- ul(li>a{본문$))*4 -->
+    <ul>
+        <li><a href="">본문1</a></li>
+        <li><a href="">본문2</a></li>
+        <li><a href="">본문3</a></li>
+        <li><a href="">본문4</a></li>
+    </ul>
+
+<h4 id="cont1">본문1</h4>
+<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium impedit aliquid neque minus animi quia consectetur obcaecati maiores ad explicabo doloremque molestiae dolores sunt et rem corporis possimus. Dignissimos!</span>
+    <span>Omnis adipisci voluptas itaque inventore corrupti repellat a, hic fugit quo distinctio qui dolores, rerum accusantium necessitatibus ullam odio sit molestiae excepturi voluptatibus, minima ea. Fugit eligendi ut distinctio corrupti.</span>
+    <span>Voluptas ducimus quas voluptatem facilis soluta amet unde possimus saepe voluptates ullam commodi distinctio modi iusto, rem nesciunt sint ratione quibusdam inventore enim. Inventore natus sed nisi, nulla unde facere.</span>
+    <span>Impedit excepturi laboriosam earum similique corrupti deleniti voluptas soluta amet provident odio expedita veritatis dicta aliquam reprehenderit beatae vitae perferendis eveniet velit, dolorem tempora voluptatem tempore sapiente minus? Illum, veniam.</span><span>Repellat est vitae hic id dolor, ipsam ducimus amet illo neque impedit nulla tempore, placeat minus eaque quibusdam pariatur asperiores, dicta dignissimos aut distinctio tempora? Animi sapiente iure quis ducimus?</span><span>Harum ratione culpa molestias aliquid! Ad neque officia enim dolorum! Quos tempore ad beatae doloribus, fuga aliquam fugit dolorem vitae laborum accusamus ea, corrupti natus distinctio aspernatur, ratione neque ipsa.</span><span>Ullam, nostrum quidem at deleniti quibusdam velit minus impedit accusantium laborum blanditiis odio est recusandae quaerat voluptatibus veritatis, totam, aliquam modi voluptas? Culpa vitae vel assumenda necessitatibus aliquam quae molestiae!</span><span>Dolorem quod, incidunt quaerat earum libero ipsa quos magni debitis quis expedita commodi saepe eius praesentium repellat error hic temporibus repudiandae possimus. Possimus culpa ratione impedit quidem consectetur? Quos, esse.</p>
+<h4 id="cont1">본문2</h4>
+<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium impedit aliquid neque minus animi quia consectetur obcaecati maiores ad explicabo doloremque molestiae dolores sunt et rem corporis possimus. Dignissimos!</span><span>Omnis adipisci voluptas itaque inventore corrupti repellat a, hic fugit quo distinctio qui dolores, rerum accusantium necessitatibus ullam odio sit molestiae excepturi voluptatibus, minima ea. Fugit eligendi ut distinctio corrupti.</span><span>Voluptas ducimus quas voluptatem facilis soluta amet unde possimus saepe voluptates ullam commodi distinctio modi iusto, rem nesciunt sint ratione quibusdam inventore enim. Inventore natus sed nisi, nulla unde facere.</span><span>Impedit excepturi laboriosam earum similique corrupti deleniti voluptas soluta amet provident odio expedita veritatis dicta aliquam reprehenderit beatae vitae perferendis eveniet velit, dolorem tempora voluptatem tempore sapiente minus? Illum, veniam.</span><span>Repellat est vitae hic id dolor, ipsam ducimus amet illo neque impedit nulla tempore, placeat minus eaque quibusdam pariatur asperiores, dicta dignissimos aut distinctio tempora? Animi sapiente iure quis ducimus?</span><span>Harum ratione culpa molestias aliquid! Ad neque officia enim dolorum! Quos tempore ad beatae doloribus, fuga aliquam fugit dolorem vitae laborum accusamus ea, corrupti natus distinctio aspernatur, ratione neque ipsa.</span><span>Ullam, nostrum quidem at deleniti quibusdam velit minus impedit accusantium laborum blanditiis odio est recusandae quaerat voluptatibus veritatis, totam, aliquam modi voluptas? Culpa vitae vel assumenda necessitatibus aliquam quae molestiae!</span><span>Dolorem quod, incidunt quaerat earum libero ipsa quos magni debitis quis expedita commodi saepe eius praesentium repellat error hic temporibus repudiandae possimus. Possimus culpa ratione impedit quidem consectetur? Quos, esse.</p>
+
+<h4 id="cont1">본문3</h4>
+<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium impedit aliquid neque minus animi quia consectetur obcaecati maiores ad explicabo doloremque molestiae dolores sunt et rem corporis possimus. Dignissimos!</span><span>Omnis adipisci voluptas itaque inventore corrupti repellat a, hic fugit quo distinctio qui dolores, rerum accusantium necessitatibus ullam odio sit molestiae excepturi voluptatibus, minima ea. Fugit eligendi ut distinctio corrupti.</span><span>Voluptas ducimus quas voluptatem facilis soluta amet unde possimus saepe voluptates ullam commodi distinctio modi iusto, rem nesciunt sint ratione quibusdam inventore enim. Inventore natus sed nisi, nulla unde facere.</span><span>Impedit excepturi laboriosam earum similique corrupti deleniti voluptas soluta amet provident odio expedita veritatis dicta aliquam reprehenderit beatae vitae perferendis eveniet velit, dolorem tempora voluptatem tempore sapiente minus? Illum, veniam.</span><span>Repellat est vitae hic id dolor, ipsam ducimus amet illo neque impedit nulla tempore, placeat minus eaque quibusdam pariatur asperiores, dicta dignissimos aut distinctio tempora? Animi sapiente iure quis ducimus?</span><span>Harum ratione culpa molestias aliquid! Ad neque officia enim dolorum! Quos tempore ad beatae doloribus, fuga aliquam fugit dolorem vitae laborum accusamus ea, corrupti natus distinctio aspernatur, ratione neque ipsa.</span><span>Ullam, nostrum quidem at deleniti quibusdam velit minus impedit accusantium laborum blanditiis odio est recusandae quaerat voluptatibus veritatis, totam, aliquam modi voluptas? Culpa vitae vel assumenda necessitatibus aliquam quae molestiae!</span><span>Dolorem quod, incidunt quaerat earum libero ipsa quos magni debitis quis expedita commodi saepe eius praesentium repellat error hic temporibus repudiandae possimus. Possimus culpa ratione impedit quidem consectetur? Quos, esse.</p>
+
+<h4 id="cont1">본문4</h4>
+<p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusantium impedit aliquid neque minus animi quia consectetur obcaecati maiores ad explicabo doloremque molestiae dolores sunt et rem corporis possimus. Dignissimos!</span><span>Omnis adipisci voluptas itaque inventore corrupti repellat a, hic fugit quo distinctio qui dolores, rerum accusantium necessitatibus ullam odio sit molestiae excepturi voluptatibus, minima ea. Fugit eligendi ut distinctio corrupti.</span><span>Voluptas ducimus quas voluptatem facilis soluta amet unde possimus saepe voluptates ullam commodi distinctio modi iusto, rem nesciunt sint ratione quibusdam inventore enim. Inventore natus sed nisi, nulla unde facere.</span><span>Impedit excepturi laboriosam earum similique corrupti deleniti voluptas soluta amet provident odio expedita veritatis dicta aliquam reprehenderit beatae vitae perferendis eveniet velit, dolorem tempora voluptatem tempore sapiente minus? Illum, veniam.</span><span>Repellat est vitae hic id dolor, ipsam ducimus amet illo neque impedit nulla tempore, placeat minus eaque quibusdam pariatur asperiores, dicta dignissimos aut distinctio tempora? Animi sapiente iure quis ducimus?</span><span>Harum ratione culpa molestias aliquid! Ad neque officia enim dolorum! Quos tempore ad beatae doloribus, fuga aliquam fugit dolorem vitae laborum accusamus ea, corrupti natus distinctio aspernatur, ratione neque ipsa.</span><span>Ullam, nostrum quidem at deleniti quibusdam velit minus impedit accusantium laborum blanditiis odio est recusandae quaerat voluptatibus veritatis, totam, aliquam modi voluptas? Culpa vitae vel assumenda necessitatibus aliquam quae molestiae!</span><span>Dolorem quod, incidunt quaerat earum libero ipsa quos magni debitis quis expedita commodi saepe eius praesentium repellat error hic temporibus repudiandae possimus. Possimus culpa ratione impedit quidem consectetur? Quos, esse.</p>
+
+</h4>
+<BR><BR>
+
+<A HREF="#MAIN">바로가기로 올라가기 </A>
+<A HREF=" TOO">바로가기로 올라가기 </A>  <!--id를 만들지 않아도 html에서 제공 -->
+
+
+
+</body>
+</html>

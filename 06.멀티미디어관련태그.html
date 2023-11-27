@@ -17,19 +17,116 @@
     <h3> * src 속성 </h3>
 
     <figure>
-        <img src="resources/img/italy.jpg" >
+        <img src="resources/img/italy.jpg" alt="이미지가 없음을 보여준다. >
         <!--상대경로로 지정했을 때 이런식으로, 근데 자동으로 잡아 줘서 편하다 -->
         <figcaption>이탈리아 강</figcaption>
     </figure>
 
     <figure>
-        <img src="C:\hyunsu\workspace\HTML5\img\italy.jpg" / alt="이미지가 없음">
+        <img src="C:\hyunsu\workspace\HTML5\img\italy.jpg" / alt="이미지가 없음을 보여준다. " width="250" height="150">
         <!--상대경로로 지정했을 때 이런식으로, 근데 자동으로 잡아 줘서 편하다 -->
-        <!-- alt 사용잉ㅍ 그림 없을 때 alt 사용한다.
+        <!-- alt 사용잉 그림 없을 때 alt 사용한다.
             시각장애인들을 위한 스크린리더(화면낭독기)에서 이미지를 읽어주는 설명 문구 -->
         <figcaption>이탈리아 강</figcaption>
     </figure>
 
+    <H3>
+        width, height 속성 
+    </H3>
+
+    <P>
+        - 이미지의 가로, 세로 길이 조절 가능 <br>
+        - 고정길이(px) , 가변길이(%)로 지정 =>기본값 : px
+        - 안쓰면 기본값은 픽셀
+        
+    </P>
+
+    <h4>고정 길이 단위(px) --기본값 : 화면사이즈가 조정이 되어도 이미지의 크기는 변경되지 않는다.</h4>
+    <img src="resources/img/img1.jpg" width="250" height="150">
+    <img src="resources/img/img2.jpg" width="250" height="150">
+
+    <img src="resources/img/img3.jpg" width="250" height="150">
+    <img src="resources/img/img4.jpg" width="250" height="150">
+
+    <br><br>
+
+    <h4>가변길이 (%) :화면 사이즈가 또는  부모요소사이즈에 따라 이미지의 크기도 같이 변경됨/h4>
+    <br><br>
+    <img src="resources/img/img1.jpg" width="23%" height="150">
+    <img src="resources/img/img2.jpg" width="23%" height="150">
+
+    <img src="resources/img/img3.jpg" width="23%" height="150">
+    <img src="resources/img/img4.jpg" width="23%" height="150">
+
+    <br><br>
+
+    <h3> 이미지 맵</h3>
+    <p>
+        이미지를 구역별로 나누어 링크를 걸어주는 태그로 <img> &lt;img&gt; 태그에 usemap 속성 지정 
+    </p>
+    <!--
+        <map name ="맵 이름">
+            <area shape  = "모양" coords = "시작위치, 끝위치" href="링크경로"  target="타겟"(열리는 위치)>
+            <area shape  = "모양" coords = "시작위치, 끝위치" href="링크경로"  target="타겟"(열리는 위치)>
+            <area shape  = "모양" coords = "시작위치, 끝위치" href="링크경로"  target="타겟"(열리는 위치)>
+            
+
+        </map>
+    -->
+    <img src="resources/img/seoul_map.png" usemap="#맵이름">
+
+    <map name = "gangseo">
+        <area target="_blank" alt="강서" title="강서" href="https://www.gangseo.seoul.kr/index" coords="44,152,44,160,47,170,48,177,43,183,38,189,36,197,36,202,31,205,25,208,21,215,20,222,16,226,13,231,20,239,25,241,34,247,56,252,39,250,50,255,43,260,61,249,78,244,84,246,86,255,90,259,96,262,108,264,113,260,117,250,121,241,135,238,118,221,113,213,110,205,91,195,80,182,49,155,62,166,71,172,123,224,127,229,101,200" shape="poly">
+
+    </map>
+
     
+
+    <hr>
+
+    <h1> 미디어 관련 태그 </h1>
+
+    <h3> 오디어 관련 태그 </h3>
+    <!--
+        <audio src="" [controls(재생도구), autoplay(자동실행), loop (반볷실행)] ></audio>/ 
+           <audio src="" [controls(재생도구), autoplay(자동실행), loop (반볷실행)] />
+
+            - src : 오디오 경로 
+            - controls : 재생도구 출력 여부
+            - autoplay : 자동재생여부(크롬x, 엣지x)
+            - loop : 반복재생 여부 
+            - 속성 하나만 넣어주면 된다 controls
+        
+    -->
+    <audio src="resources/video/River_Music.mp3" controls autoplay loop></audio>
+
+    <!-- 비디오 닫아 줘야 한다-->
+    <h1> 미디어 관련 태그 </h1>
+
+    <h3> 비디오 관련 태그 </h3>
+    <!--
+        <video src=""[controls autoplay loop width="" height="" poster="썸네일 이미지"]
+        poster는 그림에 딱 맞게
+    -->
+
+    <video src="resources/video/video1.mp4" controls
+                width="600", height="412"
+    
+    poster="resources/img/video1_sumnail.jpg"
+                width="600", height="412" > </video>
+               
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

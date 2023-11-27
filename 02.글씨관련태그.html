@@ -15,7 +15,7 @@
     <!--h 태그 관련  <h1 ~ h6> -->
     <h1> h1태그 입니다 - 제목글씨 에 사용 (굵은 굴씨체) </h1>
     <h2> h2태그 입니다</h2>  주로 쓰는 것이 1,2 
-    <h3> h3태그 입니다</h3>
+    <h3> h3태그 입니다</h3> 굵은 글씨체
     <h4> h4태그 입니다</h4>
     <h5> h5태그 입니다</h5>
     <h6> h6태그 입니다</h6>
@@ -25,12 +25,13 @@
     <hr>
 
     <h3> 문단을 나누는 태그 : p , pre </h3>
-    <p>
+    <p> ★★★ p태그는 끝나면 줄바꿈 한다. 
         문단 영역을 나누는 태그로는 p태그와 pre 태그가 있다 . <br>
         p태그는 줄바꿈하고자 한다면 별도의 태그를 작성 해야 한다. <br>
         그리고      공백은 한개의 공백만을 표시하기 때문에 별도의 
-        &nbsp; 한개당 하&nbsp;나로 표시한다. 
-        &ensp; 이것보다 하나 더 큰 공백이고(2배정도차이), &emsp;더큰 공백
+        ★★★&nbsp; 한개당 하&nbsp;★★★나로 표시한다. 
+        ★★★&ensp; 이것보다 하나 더 큰 공백이고(2배정도차이), 
+        ★★★&emsp;더큰 공백
     
     </p>
 
@@ -42,20 +43,25 @@
 
     <!--1줄로 보인다. -->
     <!-- 1.블록설정하고  2. 알트 더블유 누르면 P로 감싼다 -->
-    <P><SPANSPAN>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim quos quas optio ab magnam ratione delectus fugit id odit. Reiciendis tenetur natus iure animi consequuntur repudiandae pariatur cumque nam?</SPANSPAN>
+    <P>
+        <SPANSPAN>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta enim quos quas optio ab magnam ratione delectus fugit id odit. Reiciendis tenetur natus iure animi consequuntur repudiandae pariatur cumque nam?</SPANSPAN>
     Vitae maiores ratione voluptates dicta fugit adipisci possimus eaque et officiis? Commodi voluptates beatae quod quasi? Aut provident, eligendi, vero voluptate suscipit rem harum nemo veritatis cum culpa, perferendis obcaecati?
     Minima saepe perferendis vero, harum architecto fugiat labore, quo quisquam odit sint, tempora ipsa. Animi velit veniam sapiente, cumque nesciunt perspiciatis temporibus vitae ratione et laudantium, exercitationem ipsam aspernatur recusandae?
     Blanditiis quia eaque necessitatibus assumenda ullam aliquid ipsum non praesentium atque dolor facilis voluptas sunt, quaerat at sint doloremque optio culpa aspernatur? Ab saepe nobis, vel dolore suscipit obcaecati laborum.
     Mollitia possimus assumenda quo nulla laudantium fuga neque dolore illo fugiat obcaecati officia iusto, rerum vel nam numquam vero commodi magni esse, et veritatis facere! Dolorum magni praesentium vitae eum.</P>
     
-    <!--EMMET : 태그안의 태그들을 자동완성 -->
+    <!--EMMET : ★★★태그안의 태그들을 자동완성 -->
 
-        <!--LOREM5 : 의미없는 문자 5단어 자동완성 -->
-        <!--LOREM*5 : 의미없는 문단 5문단 자동완성 -->
+        <!--LOREM5 : ★★★의미없는 문자 5단어 자동완성 -->
+        <!--LOREM*5 : ★★★의미없는 문단 5문단 자동완성 -->
+        <!--(p>lorem)*5 p태그 5개안에 의미없는 문단 단 1개씩-->
 
-    <!-- P>LOREM*5 : P태그 안에 의미없는 문단 5문단, 문단은 <SPAN>태그안에 자동완성 -->
-    <P></P>
-    <PRE>  자바 쌍따옴표와 똑같이 그대로 출력된다. 
+    <!-- P>LOREM*5 : ★★★P태그 안에 의미없는 문단 5문단, 문단은 <SPAN>태그안에 자동완성 -->
+    <P> p>lorem*5
+
+  </P>
+    <PRE>  ★★★그대로 출력해준다. 
+        자바 쌍따옴표와 똑같이 그대로 출력된다. 
         줄바꿈이라든지 혹은 여러개의 공백을 그대로 인식 
         그래서 여기에 시를 적어 보겠습니다. 
         내가 여기에다 쓴 것 그대로 출력된다
@@ -85,7 +91,8 @@
 
     <strong>strong : 글자를 굵게 표시하는 태그+ 스크린 리더 </strong>
 
-    <!--보여줄때는 똑같이 보여주는데  읽어주는 서비스에서는 강조해서 읽는다.-->
+    <!--보여줄때는 똑같이 보여주는데  
+        스크린 리더가 읽어주는 서비스에서는 strong이 강조해서 읽는다.-->
 
     <br><br>
     <br><br>
@@ -116,7 +123,7 @@
     <abbr> 줄임말 나타내기 <BR>
         <ABBR TITLE="HYPER  TEXT MARKUP LANGUAGE"> HTML</ABBR> 란 월드 와이드 웹(WWW)의 핵심 마크업 언어 입니다.                                                                                                                                                                                                                                                                                                                                                                                
 
-        <!--글씨에 마우스 커서 가져가면 보인다.-->
+        <!--글씨에 마우스 커서 가져가면 보인다.박스처럼 보여준다. -->
 
     </abbr>
 
